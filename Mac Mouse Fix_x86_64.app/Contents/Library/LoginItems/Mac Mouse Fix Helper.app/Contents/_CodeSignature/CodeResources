@@ -22,7 +22,7 @@
 		</data>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/Info.plist</key>
 		<data>
-		GvtuA1u+hm9FOTHaqDNjvwJcAlQ=
+		JFOqyg7KlBGZeO7zEH1nE9/10FQ=
 		</data>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/Resources/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/_CodeSignature/CodeDirectory</key>
 		<data>
-		9/RvPlGmQ04D5BTSkyuOrE56pYQ=
+		ahzVoyBX4mvs7ScBHsPO1GovXV8=
 		</data>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/_CodeSignature/CodeRequirements</key>
 		<data>
-		OnX22wWFKRSOFN1+obRynMCeyXM=
+		4pdCVPusLfVRUGfVLP7sEzO58UY=
 		</data>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/_CodeSignature/CodeResources</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/_CodeSignature/CodeSignature</key>
 		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		cqrosCQ0JZZVPGXc3/svhclIPGs=
 		</data>
 		<key>Resources/InformationDensity.md</key>
 		<data>
@@ -485,7 +485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			len7f90HdH0BQHbTK6Tvzceb5hypKU7yDHgKTYvuHlA=
+			nkuAIkj/U0jQtejCzGaASzDu51OwuXqYrDQQh/b1kF8=
 			</data>
 		</dict>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/Resources/PrivacyInfo.xcprivacy</key>
@@ -499,14 +499,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SIi3XMfTpchQvYyFJEzkFjEk9Yz/HH8SJdG6roe4hRM=
+			z+8CHP46djkVlUgyFsBShKD64ajDg1wYu47QHrfOA30=
 			</data>
 		</dict>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/_CodeSignature/CodeRequirements</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			EydSeYjC9yJ1eU9xmHaZrQBjhU9IAruH2M9Rnreil9I=
 			</data>
 		</dict>
 		<key>Resources/CocoaLumberjack_CocoaLumberjack.bundle/Contents/_CodeSignature/CodeResources</key>
@@ -520,7 +520,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			JHuKCkztG+6q896lMOml+6FEhRmEyODQDplTBlYZ9wo=
 			</data>
 		</dict>
 		<key>Resources/InformationDensity.md</key>

@@ -296,6 +296,7 @@
 		4FD4A70F2E66FDC9004EFE66 /* MFDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F0CFFE72C51878500C5D843 /* MFDataClass.m */; };
 		4FD66E0827BB553800F67559 /* CGEventHIDEventBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD66E0727BB553800F67559 /* CGEventHIDEventBridge.m */; };
 		4FD66E0B27BB9BAE00F67559 /* EventUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD66E0A27BB9BAE00F67559 /* EventUtility.m */; };
+		4FD66E0B27BB9BAE00F6755A /* EventUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD66E0A27BB9BAE00F6755A /* EventUtility.swift */; };
 		4FD860CC266EF55A004F76C8 /* ScrollConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD860CB266EF55A004F76C8 /* ScrollConfig.swift */; };
 		4FD9A7D128BA2A810006DF4B /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD9A7D028BA2A810006DF4B /* SecureStorage.swift */; };
 		4FD9A7D228BA2A8A0006DF4B /* SecureStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD9A7D028BA2A810006DF4B /* SecureStorage.swift */; };
@@ -366,6 +367,7 @@
 		4FF6668125F2C93A00689B77 /* FileMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6660925F2C93A00689B77 /* FileMonitor.m */; };
 		4FF6668325F2C93A00689B77 /* HelperAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FF6661025F2C93A00689B77 /* HelperAssets.xcassets */; };
 		4FF6668525F2C93A00689B77 /* Modifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6661725F2C93A00689B77 /* Modifiers.m */; };
+		4FBF880227BB9BAE00F6755C /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF880127BB9BAE00F6755C /* Modifiers.swift */; };
 		4FF6668B25F2C93A00689B77 /* CubicUnitBezier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6662425F2C93A00689B77 /* CubicUnitBezier.m */; };
 		4FF6668F25F2C93A00689B77 /* SmoothScroll_old_.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6662D25F2C93A00689B77 /* SmoothScroll_old_.m */; };
 		4FF6669025F2C93A00689B77 /* ScrollModifiers_old_.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF6662E25F2C93A00689B77 /* ScrollModifiers_old_.m */; };
@@ -2371,6 +2373,7 @@
 		4FD66E0727BB553800F67559 /* CGEventHIDEventBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGEventHIDEventBridge.m; sourceTree = "<group>"; };
 		4FD66E0927BB9BAD00F67559 /* EventUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventUtility.h; sourceTree = "<group>"; };
 		4FD66E0A27BB9BAE00F67559 /* EventUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventUtility.m; sourceTree = "<group>"; };
+		4FD66E0A27BB9BAE00F6755A /* EventUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventUtility.swift; sourceTree = "<group>"; };
 		4FD82DD9260575B100664D6F /* NotificationLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationLabel.h; sourceTree = "<group>"; };
 		4FD82DDA260575B100664D6F /* NotificationLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationLabel.m; sourceTree = "<group>"; };
 		4FD86058266DBF96004F76C8 /* AnimatorDeclarations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatorDeclarations.h; sourceTree = "<group>"; };
@@ -2471,6 +2474,7 @@
 		4FF6661025F2C93A00689B77 /* HelperAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HelperAssets.xcassets; sourceTree = "<group>"; };
 		4FF6661625F2C93A00689B77 /* Modifiers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Modifiers.h; sourceTree = "<group>"; };
 		4FF6661725F2C93A00689B77 /* Modifiers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Modifiers.m; sourceTree = "<group>"; };
+		4FBF880127BB9BAE00F6755C /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		4FF6661925F2C93A00689B77 /* ButtonTriggerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonTriggerGenerator.m; sourceTree = "<group>"; };
 		4FF6661A25F2C93A00689B77 /* ButtonTriggerHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonTriggerHandler.m; sourceTree = "<group>"; };
 		4FF6661C25F2C93A00689B77 /* ButtonTriggerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonTriggerGenerator.h; sourceTree = "<group>"; };
@@ -7700,6 +7704,7 @@
 			children = (
 				4FF6661625F2C93A00689B77 /* Modifiers.h */,
 				4FF6661725F2C93A00689B77 /* Modifiers.m */,
+				4FBF880127BB9BAE00F6755C /* Modifiers.swift */,
 				4FD9820F292AB02D00645FE3 /* ReactiveModifiers.swift */,
 			);
 			path = Modifiers;
@@ -7808,6 +7813,7 @@
 				4FBDA14E27B241CE0030E4EA /* GlobalEventTapThread.m */,
 				4FD66E0927BB9BAD00F67559 /* EventUtility.h */,
 				4FD66E0A27BB9BAE00F67559 /* EventUtility.m */,
+				4FD66E0A27BB9BAE00F6755A /* EventUtility.swift */,
 				4FC55E2F285E6BF800F2FCCF /* GlobalDefaults.swift */,
 				4FF6667F25F2C93A00689B77 /* HelperUtility.h */,
 				4FF6668025F2C93A00689B77 /* HelperUtility.m */,
@@ -8617,6 +8623,7 @@
 				4FAA3DAD2C55E94600CBA413 /* IBUtility.m in Sources */,
 				4FF6655125F2C7B000689B77 /* NSDictionary+Additions.m in Sources */,
 				4FF6668525F2C93A00689B77 /* Modifiers.m in Sources */,
+				4FBF880227BB9BAE00F6755C /* Modifiers.swift in Sources */,
 				4FD860CC266EF55A004F76C8 /* ScrollConfig.swift in Sources */,
 				4FE1A1B92C56A50100CE3347 /* Logging.m in Sources */,
 				4FDB5F4B2D4F85A900164F97 /* NSCharacterSet+Additions.m in Sources */,
@@ -8656,6 +8663,7 @@
 				4FFA4E4328B7D28C0062A1FE /* ReactiveAnimatorProxy.swift in Sources */,
 				4F5F3EF12756EC0400C350C0 /* RemapSwizzler.m in Sources */,
 				4FD66E0B27BB9BAE00F67559 /* EventUtility.m in Sources */,
+				4FD66E0B27BB9BAE00F6755A /* EventUtility.swift in Sources */,
 				4FFA4E3C28B79D9B0062A1FE /* NSAttributedString+Extensions.swift in Sources */,
 				4FBC834C2DAFD7DB00354981 /* HashablePair.swift in Sources */,
 				4FA5F08E2CE4CEF800ED2354 /* SymbolicHotKeys.m in Sources */,

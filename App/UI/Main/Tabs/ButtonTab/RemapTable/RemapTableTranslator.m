@@ -669,7 +669,13 @@ static NSMenuItem * _Nullable findMenuItemWithEffect(NSMenu *menu, NSDictionary 
             
             NSInteger rowBaseDataModel = [RemapTableUtility baseDataModelIndexFromGroupedDataModelIndex:row withGroupedDataModel:self.groupedDataModel];
             
-            self.dataModel[rowBaseDataModel][kMFRemapsKeyEffect] = newEffectDict;
+            NSMutableDictionary *mutableRowDict = [self.controller.dataModel[rowBaseDataModel] mutableCopy];
+            mutableRowDict[kMFRemapsKeyEffect] = newEffectDict;
+            
+            NSMutableArray *mutableDataModel = [self.controller.dataModel mutableCopy];
+            mutableDataModel[rowBaseDataModel] = mutableRowDict;
+            self.controller.dataModel = mutableDataModel;
+            
             [self.tableView reloadData];
             [self.controller updateTableAndWriteToConfig:nil];
             

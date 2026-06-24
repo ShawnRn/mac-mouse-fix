@@ -694,7 +694,6 @@ static io_service_t copyDriverService(IOHIDDeviceRef device) {
     if (interfaceService == 0) {
         DDLogWarn(@"[PointerSpeed] failed to find IOHIDInterface under iohidDeviceService (ID: 0x%llx)", parentID);
         printRegistrySubtree(iohidDeviceService, 0);
-        IOObjectRelease(iohidDeviceService);
         return 0;
     }
     io_service_t driverService = findChildOfRegistryEntryRecursive(interfaceService, @"AppleUserHIDEventDriver");
@@ -704,7 +703,6 @@ static io_service_t copyDriverService(IOHIDDeviceRef device) {
     }
     
     /// Release stuff
-    IOObjectRelease(iohidDeviceService);
     IOObjectRelease(interfaceService);
     
     /// Return

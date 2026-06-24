@@ -371,6 +371,16 @@ public class Device: NSObject {
             }
         }
     }
+    
+    deinit {
+        #if IS_HELPER
+        if let dl = iohidDevice {
+            IOHIDDeviceRegisterInputValueCallback(dl, nil, nil)
+            IOHIDDeviceUnscheduleFromRunLoop(dl, CFRunLoopGetMain(), CFRunLoopMode.defaultMode.rawValue)
+            IOHIDDeviceClose(dl, IOOptionBits(kIOHIDOptionsTypeNone))
+        }
+        #endif
+    }
 }
 
 // MARK: - StrangeDevice Subclass

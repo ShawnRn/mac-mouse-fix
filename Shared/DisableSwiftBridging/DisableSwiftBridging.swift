@@ -108,8 +108,8 @@ extension Remap {
 
 extension Modifiers {
     
-    static func modifiers(with event: CGEvent?) -> NSMutableDictionary {
-        return __modifiers(with: event) as! NSMutableDictionary
+    static func modifiers(with event: CGEvent?) -> NSDictionary {
+        return __modifiers(with: event) as! NSDictionary
     }
     
     static func buttonModsChanged(to newMods: NSMutableArray) {

@@ -570,9 +570,15 @@ public class RemapTableController: NSViewController, NSTableViewDelegate, NSTabl
         }
         
         let openPopupRow = toHighlightIndexSet.first!
-        let popUpButton = RemapTableUtility.getPopUpButton(atRow: UInt(openPopupRow), from: self.tableView)
-        let delay = existingIndexes.count == 1 ? 0.0 : 0.2
-        popUpButton.perform(#selector(NSButton.performClick(_:)), with: nil as Any?, afterDelay: delay)
+        let baseIndex = RemapTableUtility.baseDataModelIndex(fromGroupedDataModelIndex: openPopupRow, withGroupedDataModel: self.groupedDataModel)
+        
+        if var dataModelWithCaptureCell = SharedUtility.deepCopy(of: self.dataModel) as? [[AnyHashable: Any]] {
+            dataModelWithCaptureCell[baseIndex][kMFRemapsKeyEffect] = ["drawKeyCaptureView": true]
+            let delay = existingIndexes.count == 1 ? 0.0 : 0.2
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+                self.reloadDataWithTemporaryDataModel(dataModelWithCaptureCell)
+            }
+        }
         
         let capturedButtonsAfter = RemapTableUtility.getCapturedButtonsAndExcludeButtonsThatAreOnlyCaptured(byModifier: false)
         CaptureToasts.showButtonCaptureToastWith(before: capturedButtonsBefore, after: capturedButtonsAfter)

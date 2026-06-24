@@ -105,8 +105,18 @@ public class KeyCaptureView: NSTextView, NSTextViewDelegate {
             }
         }
         
+        let cleanedFlags = flags.intersection([.maskCommand, .maskShift, .maskAlternate, .maskControl, .maskSecondaryFn])
+        
+        // Mitigate ARC Race Condition:
+        // makeFirstResponder(nil) synchronously calls resignFirstResponder(), which triggers _cancelHandler?() and reloads the table.
+        // This deallocates KeyCaptureView cell, resetting _captureHandler to nil before we can call it.
+        // Therefore, we copy _captureHandler to a local variable, and clear both handlers before resignation.
+        let capture = self._captureHandler
+        self._captureHandler = nil
+        self._cancelHandler = nil
+        
         MainAppState.shared.window?.makeFirstResponder(nil)
-        _captureHandler?(keyCode, type, flags)
+        capture?(keyCode, type, cleanedFlags)
     }
     
     public override func becomeFirstResponder() -> Bool {
